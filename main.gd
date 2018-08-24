@@ -6,6 +6,8 @@ var male
 var img1
 var img2
 
+const imgsize = 256
+
 func calc_difference(img, base_mesh, target_mesh):
 	img.lock()
 	for x in range(img.get_width()):
@@ -20,11 +22,11 @@ func _ready():
 	dir.remove("res://assets/base/female.png")
 	dir.remove("res://assets/base/male.png")
 	img1 = Image.new()
-	img1.create(1024, 1024, false, Image.FORMAT_RGB8)
+	img1.create(imgsize, imgsize, false, Image.FORMAT_RGB8)
 	calc_difference(img1, null, null)
 	img1.save_png("res://assets/base/female.png")
 	img2 = Image.new()
-	img2.create(1024, 1024, false, Image.FORMAT_RGB8)
+	img2.create(imgsize, imgsize, false, Image.FORMAT_RGB8)
 	calc_difference(img2, null, null)
 	img2.save_png("res://assets/base/male.png")
 
