@@ -1,1 +1,3 @@
 *.blend[1-9]*
+.import
+*.import
