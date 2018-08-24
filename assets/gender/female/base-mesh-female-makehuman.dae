@@ -12,7 +12,7 @@
 
   <library_images>
     <image id="brown_eye_png" name="brown_eye_png">
-      <init_from>file://textures/brown_eye.png</init_from>
+      <init_from>textures/brown_eye.png</init_from>
     </image>
   </library_images>
 
